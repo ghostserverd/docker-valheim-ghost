@@ -39,7 +39,7 @@ services:
 ## server setup
 1. Port forward `47584,2456,2457,2458` to the machine that will host the server.
 2. Run `docker-compose -f valheim.yml up valheim`.
-3. The first time you run it, it will probably hang with a log message like `DungeonDB Start <some_number>`. You might be able to let it finish, but I found if you kill it and start it again, it will succeed the second time. I'm not sure why this is yet.
+3. The first time you run it, it will probably hang with a log message like `DungeonDB Start <some_number>`. Once it reaches this point, kill the container and start it again. This time, it should complete successfully and you will be able to connect in the future. Even if it does reach the `Game server connected` message, you need to kill it to ensure that the emu is set up correctly.
 
 ## client setup
 courtesy of mingo222

@@ -6,9 +6,9 @@ FROM mbround18/valheim
 RUN apt-get update && apt-get install -y \
     unzip
 
-# ------------------------ #
+# ------------------ #
 # -- Goldberg Emu -- #
-# ------------------------ #
+# ------------------ #
 RUN wget https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/jobs/1034305976/artifacts/download -O /home/goldberg_emulator.zip && \
     mkdir /home/goldberg/ && \
     unzip /home/goldberg_emulator.zip -d /home/goldberg && \
